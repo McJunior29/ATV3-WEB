@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3 - CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style type="text/css">
+        body{
+            background: linear-gradient(180deg, #d1fffe, #f3fedf);
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            
+        }
+        .conteiner{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        .planos h1, h3, p{
+            text-align: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 25px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card_box {
+            margin-top: 20px;
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            font-size: 20px;
+            border: 3px solid black;
+            border-radius: 6px;
+            height: 60%;
+            background-color: rgb(255, 255, 255);
+            min-height: 50vh;
+        }
+
+
+        .card_box ul {
+            list-style:none;
+            padding: 10px;
+        }
+        .card_box li{
+            font-size: 1.3em;
+            line-height: 1.4;
+        }
+
+        .card_header{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            width: 100%;
+            color: white;
+            background-color: black;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+            word-spacing: 10px;
+        }
+
+        .basic{
+            background-color: green !important;
+            
+        }
+
+        .empre{
+            background-color: rgb(255, 166, 0) !important;
+            
+        }
+
+        .pro{
+            background-color: #a80000 !important;
+            
+        }
+        
+        .card_body{
+            margin-top: auto;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            
+        }
+        .bottom_name{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            color: white;
+            background-color: black;
+            margin-top: auto;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-size: 1.3em;
+        }
+        img{
+            width: 80%;
+        }
+        .value{
+            margin-top: 2vw;
+            width: 100%;
+            font-size: 1.8em;
+            text-align: justify;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="planos">
+    <h1>
+        Planos de hospedagem perfeitos
+    </h1>
+    <p>
+        Para empresários e indivíduos, nós provemos soluções de hospedagem web completa
+    </p>
+    <div class="conteiner">
+        <div class="card_box">
+            <div class="card_header">Grátis</div>
+            <div style="display: flex;">
+                <div>
+                    <img src="img/flor.png" />
+                </div>
+                <div class="value">
+                    <strong>R$ 0</strong>
+                    <br>
+                    <span style="font-size: 0.6em;">Por mês</span>
+                </div>
+            </div>
+            <div class="card_body">
+                <ul>
+                    <li>1 Domínio</li>
+                    <li>1 Conta de email</li>
+                    <li>250 MB de espaço em disco</li>
+                    <li>5 GB de trâfego</li>
+                    <li>Site HTML</li>
+                </ul>
+            </div>
+            <div class="bottom_name">Compre agora!</div>
+        </div>
+            <div class="card_box" style="border: 3px solid green; color: green;">
+                <div class="card_header basic">Básico</div>
+                <div style="display: flex;">
+                    <div>
+                        <img src="img/casa.png" />
+                    </div>
+                    <div class="value">
+                        <strong>R$ 5</strong>
+                        <br>
+                        <span style="font-size: 0.6em;">Por mês</span>
+                    </div>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>5 Domínio</li>
+                        <li>5 Conta de email</li>
+                        <li>1 GB de espaço em disco</li>
+                        <li>25 GB de trâfego</li>
+                        <li>5 Site HTML</li>
+                    </ul>
+                </div>
+                <div class="basic bottom_name">Compre agora!</div>
+            </div>
+
+            <div class="card_box" style="border: 3px solid rgb(255, 166, 0); color:  rgb(255, 166, 0);">
+                <div class="card_header empre">Empresarial</div>
+                <div style="display: flex;">
+                    <div>
+                        <img src="img/mala.png" />
+                    </div>
+                    <div class="value">
+                        <strong>R$ 10</strong>
+                        <br>
+                        <span style="font-size: 0.6em;">Por mês</span>
+                    </div>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>10 Domínio</li>
+                        <li>10 Conta de email</li>
+                        <li>10 GB de espaço em disco</li>
+                        <li>500 GB de trâfego</li>
+                        <li>10 Site HTML</li>
+                    </ul>
+                </div>
+                <div class="bottom_name empre">Compre agora!</div>
+            </div>
+
+            <div class="card_box" style="border: 3px solid #a80000; color: #a80000;">
+                <div class="card_header pro">Ilimitado</div>
+                <div style="display: flex;">
+                    <div>
+                        <img src="img/coroa.png" />
+                    </div>
+                    <div class="value">
+                        <strong>R$ 0</strong>
+                        <br>
+                        <span style="font-size: 0.6em;">Por mês</span>
+                    </div>
+                </div>
+                <div class="card_body">
+                    <ul>
+                        <li>Domínios ilimitados</li>
+                        <li>Contas de email ilimitado</li>
+                        <li>Espaço em disco ilimitado</li>
+                        <li>Tráfego ilimitado</li>
+                    </ul>
+                </div>
+                <div class="bottom_name pro">Compre agora!</div>
+            </div>
+        </div>
+
+    <p>
+        Oferta especial para usuários novatos e garantia de dinheiro de volta em 30 dias caso haja cancelamento
+    </p>
+</div>
+</body>
+</html>
